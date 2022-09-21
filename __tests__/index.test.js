@@ -4,6 +4,10 @@ const { Logger } = require('../index')
 describe('GIVEN a pattern of an endpoint', () => {
 
   test('then return the short name endpoint', () => {
+    expect(Logger('GET /users')).toBe('get_all_users');
+  });
+
+  test('then return the short name endpoint', () => {
     expect(Logger('GET /users/bcd098')).toBe('get_user');
   });
 
