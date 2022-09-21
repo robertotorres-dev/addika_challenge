@@ -2,13 +2,6 @@
 
 const { reservedWords, dbPatterns } = require('./dbLogger')
 
-
-/* const isAlphanumeric = (exp) => {
-  console.log(exp);
-  const regExp = /^[A-Za-z0-9]+$/;
-  console.log(exp.match(regExp));
-  return (exp.match(regExp));
-} */
 const isAlphaNumeric = str => /^[a-z0-9]+$/gi.test(str);
 
 const Logger = (inputPattern) => {
